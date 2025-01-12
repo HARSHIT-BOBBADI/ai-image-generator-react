@@ -1,0 +1,115 @@
+.ai-image-generator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.header span {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  -webkit-background-clip: text;
+	background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-loading img {
+  width: 512px;
+  height: 512px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.image-loading img:hover {
+  transform: scale(1.05);
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #333, #444);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  padding: 0 15px;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.generate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.generate-btn:hover {
+  background: linear-gradient(90deg, #ff9671, #ff6f91);
+  transform: scale(1.05);
+}
+
+.loading-image img {
+  width: 512px;
+  height: 512px;
+}
+
+.download-btn {
+  margin-top: 10px;
+}
+
+.download-btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.download-btn a:hover {
+  background: linear-gradient(90deg, #ff9671, #ff6f91);
+  transform: scale(1.05);
+}
